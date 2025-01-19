@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-font {
+  font-family: "Poppins", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-size: 10px;
+  /* font size */
+  --font-size1: 5.2rem;
+  --font-size2: 3.8rem;
+  --font-size3: 2.8rem;
+  --font-size4: 2.4rem;
+  --font-size5: 1.6rem;
+  --font-size6: 1.4rem;
+
+  /* color */
+  --dark1: rgba(24, 25, 31, 1);
+  --dark2: rgba(0, 0, 0, 0.87);
+  --dark3: rgba(120, 120, 133, 1);
+  --black: rgba(58, 58, 58, 1);
+  --white: rgba(255, 255, 255, 1);
+  --red-pink: rgba(224, 44, 109, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* share style */
+.display-flex {
+  display: flex;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* navbar style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8.7rem;
+}
+.navbar h4 {
+  font-size: var(--font-size4);
+  color: var(--black);
+  font-weight: 700;
+}
+.menu {
+  list-style: none;
+  gap: 3.4rem;
+}
+.menu a {
+  text-decoration: none;
+  font-size: var(--font-size5);
+  color: var(--black);
+  font-weight: 600;
+}
+.menu i {
+  font-size: var(--font-size4);
+}
+.desc {
+  margin: auto 0;
+}
+.image {
+  width: 475px;
+  height: 475px;
+  background-image: url(assets/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 30px;
+}
+.image > div {
+  max-width: 440px;
+}
+.hero {
+  margin-top: 5rem;
+  justify-content: space-between;
+  gap: 2px;
+}
+.desc h2 {
+  font-size: var(--font-size1);
+  font-weight: 700;
+  color: var(--black);
+  max-width: 700px;
+}
+.desc p {
+  font-size: var(--font-size5);
+  font-weight: 500;
+  color: var(--black);
+  max-width: 505px;
+  margin: 16px 0;
+}
+.desc button {
+  font-size: var(--font-size5);
+  font-weight: bold;
+  background-color: var(--red-pink);
+  color: var(--white);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 41px;
+}
+.image > div > img {
+  width: 100%;
+}
+.company {
+  text-align: center;
+  margin: 70px 0 100px;
+}
+.company ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(116, 116, 116, 0.381);
+  border-top: 1px solid rgba(116, 116, 116, 0.381);
+}
+.card-section {
+  margin-bottom: 12vh;
+}
+.card-section h4 {
+  text-align: center;
+  font-size: var(--font-size3);
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.card-section > p {
+  text-align: end;
+  margin-right: 78px;
+  font-size: var(--font-size5);
+  font-weight: bold;
+  color: var(--red-pink);
+}
+.all-card {
+  display: grid;
+  grid-template-columns: repeat(3, 329px);
+  grid-template-rows: repeat(3, 476px);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.card {
+  /* background-color: lightgreen; */
+  /* border: 2px solid black; */
+  padding: 17px 14px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+}
+.card-disc h5 {
+  font-weight: 500;
+  font-size: var(--font-size3);
+  color: var(--dark1);
+  margin-top: 16px;
+}
+.card-disc .p1 {
+  font-weight: 400;
+  font-size: var(--font-size4);
+  color: var(--dark2);
+}
+.card-disc .p2 {
+  font-weight: 700;
+  font-size: var(--font-size6);
+  color: var(--dark3);
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+  body {
+    padding: 0 30px;
+  }
+  .navbar {
+    padding: 50px;
+  }
+  .hero {
+    margin-top: 0;
+  }
+  .company {
+    margin-top: 0;
+  }
+  .all-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+    justify-content: center;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 7px;
+  }
+  .navbar {
+    flex-direction: column;
+    padding-top: 3.5rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 257px;
+    height: 257px;
+    padding: 50px;
+  }
+  .desc {
+    text-align: center;
+  }
+  .desc h2 {
+    padding: 10px;
+  }
+  .desc p {
+    padding: 20px;
+  }
+  .company ul {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 50px;
+  }
+  .all-card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .card-section > p {
+    max-width: 328px;
+    margin: 0 auto;
+  }
+}
