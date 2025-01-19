@@ -148,8 +148,6 @@ body {
   margin-bottom: 50px;
 }
 .card {
-  /* background-color: lightgreen; */
-  /* border: 2px solid black; */
   padding: 17px 14px;
   margin: 0 auto;
   border-radius: 5px;
@@ -178,6 +176,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .featured-desc {
   max-width: 610px;
@@ -202,9 +201,26 @@ body {
   border: none;
   padding: 10px 24px;
 }
+footer {
+  text-align: center;
+  background-color: rgba(10, 8, 38, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 50px;
+}
+footer h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 200;
+  color: rgba(217, 219, 225, 1);
+  padding: 3px 0;
+}
 
+/* Media style */
 @media (max-width: 992px) and (min-width: 576px) {
-  body {
+  main header {
     padding: 0 30px;
   }
   .navbar {
